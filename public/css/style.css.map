@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"AAAA;EACE,kBAAA;ACCF","file":"style.css","sourcesContent":["h1{\r\n  color: greenyellow;\r\n}","h1 {\n  color: greenyellow;\n}"]}
