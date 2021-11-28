@@ -1,16 +1,16 @@
 header{
-  height:30vh;
+  height:20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   @include tablet{
     justify-content: space-between;
-    height:20vh;
+
     }
   @include desktop;
 
   .logo{
-    font-size:2.25em;
+    font-size:2.5em;
     color:white;
     background-color:$logo-background-color;
     padding: 0.4em;
@@ -39,8 +39,9 @@ header{
       color:white;
     }
   }
-  .menu__link{
+  .menu__link {
     text-decoration: none;
     font-weight: bold;
+    color: $main-font-color;
   }
 }

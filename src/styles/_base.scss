@@ -2,7 +2,7 @@ body{
   background-color:$main-background-color;
   color: $main-font-color;
   font-family: 'Open Sans', sans-serif;
-  @include tablet {
-    padding:1em;
-  }
+  padding:1em;
 }
+
+

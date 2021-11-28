@@ -1,0 +1,58 @@
+.welcome{
+  background-color: white;
+  border-radius:10px;
+  box-shadow:0px 3px 0px 0px rgba(0,0,0,0.05);
+  padding: 1em 3em;
+  @include tablet{
+    display: flex;
+
+  }
+  @include desktop;
+
+.welcome__content {
+  @include tablet {
+    width: 180%;
+  }
+  .welcome__title {
+    padding: 1em 2em;
+    font-size: 3em;
+    text-align: center;
+    @include tablet{
+      text-align: left;
+      padding: 0.2em;
+    }
+  }
+
+  .welcome__description {
+    padding-bottom: 0.5em;
+    font-size: 2.5em;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.25em;
+    @include tablet{
+      display: flex;
+      text-align: left;
+    }
+  }
+}
+  .welcome__actions{
+    @include tablet{
+      width: 100%;
+    }
+
+   .welcome__cta{
+     background-color:$button-featured-color;
+     color:white;
+     font-weight:900;
+     font-size:1.5em;
+
+   }
+   .welcome__more{
+     background-color:$main-background-color;
+     font-weight:900;
+     font-size:1.5em;
+   }
+
+  }
+
+}
