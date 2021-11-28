@@ -174,16 +174,26 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-body {
-  height: 100vh;
-  width: 100%;
-  background-color: #E4E4E4;
-  color: #444444;
-  font-family: "Open Sans", sans-serif;
+header {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-h1 {
-  font-size: 3em;
+@media screen and (min-width: 1000px) {
+  header {
+    justify-content: space-between;
+    height: 20vh;
+  }
+}
+@media screen and (min-width: 1250px) {
+  header {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+header .logo {
+  font-size: 2.25em;
   color: white;
   background-color: #fc4887;
   padding: 0.4em;
@@ -192,5 +202,40 @@ h1 {
   font-family: "Oleo Script", cursive;
   letter-spacing: 0.1em;
   font-weight: 300;
+}
+
+.menu {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .menu {
+    display: flex;
+  }
+}
+.menu .menu_item {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  color: #444444;
+}
+.menu .menu__link--featured {
+  background-color: #444444;
+}
+.menu .menu__link--featured a {
+  color: white;
+}
+.menu .menu__link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body {
+  background-color: #E4E4E4;
+  color: #444444;
+  font-family: "Open Sans", sans-serif;
+}
+@media screen and (min-width: 1000px) {
+  body {
+    padding: 1em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
