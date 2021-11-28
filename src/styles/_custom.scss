@@ -1,3 +1,19 @@
+body{
+  height: 100vh;
+  width: 100%;
+  background-color:$main-background-color;
+  color: $main-font-color;
+  font-family: 'Open Sans', sans-serif;
+}
+
 h1{
-  color: greenyellow;
+  font-size:3em;
+  color:white;
+  background-color:$logo-background-color;
+  padding: 0.4em;
+  display: inline-block;
+  border-radius: 15px;
+  font-family: 'Oleo Script', cursive;
+  letter-spacing:0.1em;
+  font-weight:300;
 }
