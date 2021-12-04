@@ -14,9 +14,10 @@
     width: 180%;
   }
   .welcome__title {
-    padding: 1em 2em;
+    padding: 1em 0;
     font-size: 3em;
     text-align: center;
+    position: relative;
     @include tablet{
       text-align: left;
       padding: 0.2em;
@@ -25,7 +26,7 @@
 
   .welcome__description {
     padding-bottom: 0.5em;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 100;
     text-align: center;
     line-height: 1.25em;
@@ -36,6 +37,8 @@
   }
 }
   .welcome__actions{
+
+
     @include tablet{
       width: 100%;
     }
@@ -45,12 +48,30 @@
      color:white;
      font-weight:900;
      font-size:1.5em;
+     cursor: pointer;
+     &:hover {
+       background-color: $button-hover-color;}
+
+     @include tablet{
+       display: flex;
+       width: 100%;
+       flex-direction: row-reverse;
+       justify-content: space-between;
+     }
 
    }
    .welcome__more{
+
+     cursor: pointer;
      background-color:$main-background-color;
      font-weight:900;
      font-size:1.5em;
+     @include tablet{
+       display: flex;
+       width: 100%;
+       flex-direction: row-reverse;
+       justify-content: space-between;
+     }
    }
 
   }

@@ -7,7 +7,7 @@
   .row {
     display: flex;
     flex-wrap: wrap;
-    $columns: 12;
+    $columns: 2;
     $column-base-width: 100% / $columns;
     [class*='col-']{
       min-height: 1px;

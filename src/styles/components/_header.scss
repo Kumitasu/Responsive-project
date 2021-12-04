@@ -32,9 +32,16 @@ header{
     padding:1em 2em;
     border-radius:0.5em;
     color:$main-font-color;
+    &:hover{
+      background-color: white;
+    }
+
   }
   .menu__link--featured{
     background-color: $main-font-color;
+    padding:1em 2em;
+    border-radius:0.5em;
+    color:$main-font-color;
     a{
       color:white;
     }
@@ -43,5 +50,6 @@ header{
     text-decoration: none;
     font-weight: bold;
     color: $main-font-color;
+
   }
 }
